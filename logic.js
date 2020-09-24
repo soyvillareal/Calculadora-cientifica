@@ -11,9 +11,11 @@ class CalculadoraBasica {
     }
 
     subtractFromMemory() {
+        this.memoryRegister -= this.solveOperation();
     }
 
     addToMemory() {
+        this.memoryRegister += this.solveOperation();
     }
 
     writeToDisplay(data) {
@@ -24,5 +26,17 @@ class CalculadoraBasica {
             legacy = legacy == "0" ? data : legacy += data;
         }
         document.getElementById("displayBox").value = legacy;
+    }
+
+    writeOperatorToDisplay(operator) {
+        let legacy = document.querySelector("#displayBox").value;
+        if (this.basicOperationShape.test(legacy)) {
+            this.solveOperation();
+        }
+        this.writeToDisplay(operator);
+    }
+
+    clearDisplay() {
+        document.querySelector("#displayBox").value = "0";
     }
 }
