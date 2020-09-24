@@ -29,7 +29,7 @@ class CalculadoraBasica {
     }
 
     writeOperatorToDisplay(operator) {
-        let legacy = document.querySelector("#displayBox").value;
+        let legacy = document.getElementById("displayBox").value;
         if (this.basicOperationShape.test(legacy)) {
             this.solveOperation();
         }
@@ -37,6 +37,6 @@ class CalculadoraBasica {
     }
 
     clearDisplay() {
-        document.querySelector("#displayBox").value = "0";
+        document.getElementById("displayBox").value = "0";
     }
 }
