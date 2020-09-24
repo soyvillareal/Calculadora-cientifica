@@ -1,7 +1,7 @@
 class CalculadoraBasica {
 
     constructor() {
-        this.basicOperationShape = new RegExp("(([1-9][0-9]*|[0.])?[\-\+\*\/])");
+        this.basicOperationShape = new RegExp("(([1-9][0-9]*|[0.])(.[0-9]*[1-9])?[\-\+\*\/])(([1-9][0-9]*|[0.])(.[0-9]*[1-9])?)");
         this.memoryRegister = 0;
     }
 
