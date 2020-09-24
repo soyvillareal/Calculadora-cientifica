@@ -1,20 +1,20 @@
 main {
-    padding: 5px;
-    margin: 2px 5px 4px;
+    padding: 10px;
+    margin: 4px 9px 4px;
 }
 
 input {
-    text-align: left;
-    background-color: grey;
-    width: 300px;
-    margin-bottom: 15px;
-    border-radius:15px;
-    font-size: 18px;
+    text-align: center;
+    background-color: white;
+    width: 250px;
+    margin-bottom: 12px;
+    border-radius:12px;
+    font-size: 30px;
 }
 
 table {
-    display: flex;
-    padding: 12px;
+    display: inline;
+    padding: 20px;
     background-color: grey;
     border-radius: 7px;
 }
