@@ -61,4 +61,4 @@ representan tal cual su funcion en los estilos._
 * .bluebutton {}
 * .redbutton {}
 
-Desarrollado por [Oscar Garces](https://github.com/Deprimaria), Didier Junco, Luis Avendaño. 😊
+Desarrollado por [Oscar Garces](https://github.com/Deprimaria), [Didier Junco](https://github.com/DavidDidier), [Luis Avendaño](https://github.com/Lu9999-lu). 😊
