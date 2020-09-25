@@ -18,3 +18,39 @@ table {
     background-color: grey;
     border-radius: 10px;
 }
+
+.displaytable {
+    display: table;
+}
+
+.displaytable-cell {
+    display: table-cell;
+}
+  
+.button {
+    width: 40px;
+    height: 15px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.blackbutton { 
+    background-color: black; 
+    color: grey;
+}
+
+.greenbutton {
+    background-color: green;
+}
+
+.greybutton {
+    background-color: grey;
+}
+
+.bluebutton {
+    background-color: blue;
+}
+
+.redbutton {
+    background-color: red;
+}
