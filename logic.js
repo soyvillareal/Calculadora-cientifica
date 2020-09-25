@@ -39,4 +39,39 @@ class CalculadoraBasica {
     clearDisplay() {
         document.getElementById("displayBox").value = "0";
     }
+
+    solveOperation() {
+        let operation = document.getElementById("displayBox").value;
+        let result = 0;
+        let ope = operation == "" ? 0 : operation;
+        if(!err) {
+            result = eval();
+        } else {
+            alert("Syntax error");
+            this.clearDisplay(ope);
+        }
+        document.getElementById("displayBox").value = result;
+        return result;
+    }
+
 }
+
+class CalculadoraCientifica extends CalculadoraBasica {
+
+    constructor() {
+        super();
+        this.operationMap = {
+            "sin(": "Math.sin(",
+            "cos(": "Math.cos(",
+            "tan(": "Math.tan(",
+            "log(": "Math.log10(",
+            "ln(": "Math.log(",
+            "sqrt(": "Math.sqrt(",
+            "PI": "Math.PI",
+            "e": "Math.E"
+        };
+    }
+
+}
+
+const calculadora = new CalculadoraCientifica();
