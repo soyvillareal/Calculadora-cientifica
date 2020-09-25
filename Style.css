@@ -1,0 +1,20 @@
+main {
+    margin: 10px;
+    padding: 5px 7px 5px;
+}
+
+input {
+    text-align: right;
+    background-color: white;
+    width: 330px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+table {
+    display: inline-block;
+    padding: 20px;
+    background-color: grey;
+    border-radius: 10px;
+}
