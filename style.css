@@ -28,29 +28,29 @@ table {
 }
   
 .button {
-    width: 40px;
-    height: 15px;
-    font-size: 16px;
-    border-radius: 8px;
+    width: 60px;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 5px;
 }
 
 .blackbutton { 
     background-color: black; 
-    color: grey;
+    color: white;
 }
 
 .greenbutton {
-    background-color: green;
+    background-color: #91ff7d;
 }
 
 .greybutton {
-    background-color: grey;
+    background-color: #cccccc;
 }
 
 .bluebutton {
-    background-color: blue;
+    background-color: #6288f3;
 }
 
 .redbutton {
-    background-color: red;
+    background-color: #f76767;
 }
