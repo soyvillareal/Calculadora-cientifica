@@ -16,11 +16,39 @@
     </header>
     <main>
         <table>
-        	<tr>
-        		<td>
-        			
-        		</td>
-        	</tr>
+            <tr>
+                <th colspan="5">
+                    <input id="displayBox" type="text">
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="displaytable-cell" id="bMClear">
+                        <button class="button" type="button" onclick="clearMemory()">MC</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="displaytable-cell" id="bMRead">
+                        <button class="button" type="button" onclick="readMemory()">MR</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="displaytable-cell" id="bMAdd">
+                        <button class="button" type="button" onclick="addToMemory()">M+</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="displaytable-cell" id="bMSub">
+                        <button class="button" type="button" onclick="subtractFromMemory()">M-</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="displaytable-cell" id="bMSave">
+                        <button class="button" type="button" onclick="saveToMemory()">MS</button>
+                    </div>
+                </td>
+            </tr>
+
         </table>
     </main>
 </body>
