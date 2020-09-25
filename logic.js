@@ -60,6 +60,9 @@ class CalculadoraCientifica extends CalculadoraBasica {
 
     constructor() {
         super();
+        this.inputList = new Array();
+        this.operationString = "";
+        this.justSolved = false;
         this.operationMap = {
             "sin(": "Math.sin(",
             "cos(": "Math.cos(",
