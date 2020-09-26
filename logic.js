@@ -74,6 +74,22 @@ class CalculadoraCientifica extends CalculadoraBasica {
         };
     }
 
+    writeToDisplay(data) {
+        var dB = document.getElementById("displayBox");
+        if (dB.value == "Syntax Error") {
+            super.clearDisplay();
+        }
+        super.writeToDisplay(data);
+    }
+
+    writeOperatorToDisplay(operator) {
+        var dB = document.getElementById("displayBox");
+        if (dB.value == "Syntax Error") {
+            super.clearDisplay();
+        }
+        this.operationString += operator;
+    }
+
 }
 
 const calculadora = new CalculadoraCientifica();
