@@ -80,6 +80,7 @@ class CalculadoraCientifica extends CalculadoraBasica {
         }
         super.writeToDisplay(data);
         this.operationString += data;
+        this.inputList.push(data);
     }
 
     writeOperatorToDisplay(operator) {
@@ -87,6 +88,8 @@ class CalculadoraCientifica extends CalculadoraBasica {
             super.clearDisplay();
         }
         this.operationString += operator;
+        super.writeToDisplay(operator);
+        this.inputList.push(operator);
     }
 
 }
