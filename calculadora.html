@@ -11,46 +11,75 @@
 </head>
 
 <body>
-    <header>
-        <h1>Calculadora científica</h1>
-    </header>
-    <main>
-        <table>
-            <tr>
-                <th colspan="5">
-                    <input id="displayBox" type="text" readonly>
-                </th>
-            </tr>
-            <tr>
-                <td>
-                    <div class="displaytable-cell" id="bMClear">
-                        <button class="button greybutton" type="button" onclick="calculadora.clearMemory()">MC</button>
-                    </div>
-                </td>
-                <td>
-                    <div class="displaytable-cell" id="bMRead">
-                        <button class="button greybutton" type="button" onclick="calculadora.readMemory()">MR</button>
-                    </div>
-                </td>
-                <td>
-                    <div class="displaytable-cell" id="bMAdd">
-                        <button class="button greybutton" type="button" onclick="calculadora.addToMemory()">M+</button>
-                    </div>
-                </td>
-                <td>
-                    <div class="displaytable-cell" id="bMSub">
-                        <button class="button greybutton" type="button" onclick="calculadora.subtractFromMemory()">M-</button>
-                    </div>
-                </td>
-                <td>
-                    <div class="displaytable-cell" id="bMSave">
-                        <button class="button greybutton" type="button" onclick="calculadora.saveToMemory()">MS</button>
-                    </div>
-                </td>
-            </tr>
-
-        </table>
-    </main>
+    <center>
+        <header>
+            <h1>Calculadora científica</h1>
+        </header>
+        <main>
+            <table>
+                <tr>
+                    <th colspan="5">
+                        <input id="displayBox" type="text" readonly>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="displaytable-cell" id="bMClear">
+                            <button class="button greybutton">MC</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="displaytable-cell" id="bMRead">
+                            <button class="button greybutton">MR</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="displaytable-cell" id="bMAdd">
+                            <button class="button greybutton">M+</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="displaytable-cell" id="bMSub">
+                            <button class="button greybutton">M-</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="displaytable-cell" id="bMSave">
+                            <button class="button greybutton">MS</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="displaytable-cell" id="bNthPowerOfTenOr">
+                            <button class="button blackbutton">10^x</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="displaytable-cell" id="bSquare">
+                            <button class="button blackbutton">x^2</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="displaytable-cell" id="bTangent">
+                            <button class="button blackbutton">tan</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="displaytable-cell" id="bCosine">
+                            <button class="button blackbutton">cos</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="displaytable-cell" id="bSine">
+                            <button class="button blackbutton">sin</button>
+                        </div>
+                    </tr>
+                </tr>
+                
+            </table>
+        </main>
+    </body>
 </body>
 
 </html>
