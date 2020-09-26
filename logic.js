@@ -43,12 +43,11 @@ class CalculadoraBasica {
     solveOperation() {
         let operation = document.getElementById("displayBox").value;
         let result = 0;
-        let ope = operation == "" ? 0 : operation;
-        if(!err) {
-            result = eval();
-        } else {
+        try {
+            result = eval(operation == "" ? 0 : operation);
+        } catch (err) {
             alert("Syntax error");
-            this.clearDisplay(ope);
+            this.clearDisplay();
         }
         document.getElementById("displayBox").value = result;
         return result;
