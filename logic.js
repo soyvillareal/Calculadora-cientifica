@@ -75,16 +75,15 @@ class CalculadoraCientifica extends CalculadoraBasica {
     }
 
     writeToDisplay(data) {
-        var dB = document.getElementById("displayBox");
-        if (dB.value == "Syntax Error") {
+        if (document.getElementById("displayBox").value == "Syntax Error") {
             super.clearDisplay();
         }
         super.writeToDisplay(data);
+        this.operationString += data;
     }
 
     writeOperatorToDisplay(operator) {
-        var dB = document.getElementById("displayBox");
-        if (dB.value == "Syntax Error") {
+        if (document.getElementById("displayBox").value == "Syntax Error") {
             super.clearDisplay();
         }
         this.operationString += operator;
