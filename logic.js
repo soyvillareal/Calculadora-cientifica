@@ -92,6 +92,20 @@ class CalculadoraCientifica extends CalculadoraBasica {
         this.inputList.push(operator);
     }
 
+    solveOperation() {
+        let result = 0;
+        if(!err){
+            result = eval(this.operationString == "" || this.operationString == "Syntax Error" ? 0 : this.operationString);
+        } else {
+            result = "Syntax Error";
+        }
+        document.getElementById("displayBox").value = result;
+        return result;
+    }
+
+    clearDisplay() {
+    }
+
 }
 
 const calculadora = new CalculadoraCientifica();
