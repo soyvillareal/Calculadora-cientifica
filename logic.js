@@ -100,6 +100,9 @@ class CalculadoraCientifica extends CalculadoraBasica {
             result = "Syntax Error";
         }
         document.getElementById("displayBox").value = result;
+        this.operationString = "";
+        this.operationString += result;
+        this.justSolved = true;
         return result;
     }
 
