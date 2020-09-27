@@ -94,9 +94,9 @@ class CalculadoraCientifica extends CalculadoraBasica {
 
     solveOperation() {
         let result = 0;
-        if(!err){
+        try {
             result = eval(this.operationString == "" || this.operationString == "Syntax Error" ? 0 : this.operationString);
-        } else {
+        } catch (err) {
             result = "Syntax Error";
         }
         document.getElementById("displayBox").value = result;
@@ -107,6 +107,8 @@ class CalculadoraCientifica extends CalculadoraBasica {
     }
 
     clearDisplay() {
+        super.clearDisplay();
+        this.operationString = "";
     }
 
 }
