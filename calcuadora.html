@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="logic.js"></script>
+    <title>Calculadora científica</title>
+</head>
+
+<body>
+    <header>
+        <h1>Calculadora científica</h1>
+    </header>
+    <main>
+        <table>
+            <tr>
+                <th colspan="5">
+                    <input id="displayBox" type="text" readonly>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="displaytable-cell" id="bMClear">
+                        <button class="button greybutton" type="button" onclick="calculadora.clearMemory()">MC</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="displaytable-cell" id="bMRead">
+                        <button class="button greybutton" type="button" onclick="calculadora.readMemory()">MR</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="displaytable-cell" id="bMAdd">
+                        <button class="button greybutton" type="button" onclick="calculadora.addToMemory()">M+</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="displaytable-cell" id="bMSub">
+                        <button class="button greybutton" type="button" onclick="calculadora.subtractFromMemory()">M-</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="displaytable-cell" id="bMSave">
+                        <button class="button greybutton" type="button" onclick="calculadora.saveToMemory()">MS</button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="displaytable-cell" id="bCube">
+                        <button class="button blackbutton" type="button" onclick="calculadora.cube()">x^3</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="displaytable-cell" id="bInverseNumber">
+                        <button class="button blackbutton" type="button" onclick="calculadora.inverseNumber()">x^-1</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="displaytable-cell" id="bSqrt">
+                        <button class="button blackbutton" type="button" onclick="calculadora.writeMathFunction('sqrt(')">sqrt</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="displaytable-cell" id="bLogOr">
+                        <button class="button blackbutton" type="button" onclick="calculadora.writeMathFunction('log(')">log</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="displaytable-cell" id="bNaturalLog">
+                        <button class="button blackbutton" type="button" onclick="calculadora.writeMathFunction('ln(')">ln</button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="displaytable-cell" id="bSquare">
+                        <button class="button blackbutton" type="button" onclick="calculadora.square()">x^2</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="displaytable-cell" id="bNthPowerOfTenOr">
+                        <button class="button blackbutton" type="button" onclick="calculadora.nthTenPower()">10^x</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="displaytable-cell" id="bSine">
+                        <button class="button blackbutton" type="button" onclick="calculadora.writeMathFunction('sin(')">sin</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="displaytable-cell" id="bCosine">
+                        <button class="button blackbutton" type="button" onclick="calculadora.writeMathFunction('cos(')">cos</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="displaytable-cell" id="bTangent">
+                        <button class="button blackbutton" type="button" onclick="calculadora.writeMathFunction('tan(')">tan</button>
+                    </div>
+                </td>
+            </tr>
+            
+        </table>
+    </main>
+</body>
+
+</html>
