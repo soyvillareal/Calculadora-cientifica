@@ -111,6 +111,21 @@ class CalculadoraCientifica extends CalculadoraBasica {
         this.operationString = "";
     }
 
+    toggleSign() {
+        var displayBox = document.getElementById("displayBox"),
+            displayContents = displayBox.value;
+        if (displayContents == 0) {
+            displayBox.value = -;
+            this.operationString += -;
+        } else {
+            displayBox.value = - + displayBox.value;
+            this.operationString = - + this.operationString;
+        }
+    }
+
+    clearMemory() {
+    }
+
 }
 
 const calculadora = new CalculadoraCientifica();
