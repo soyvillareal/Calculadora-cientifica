@@ -112,21 +112,22 @@ class CalculadoraCientifica extends CalculadoraBasica {
     }
 
     toggleSign() {
-        var displayBox = document.getElementById("displayBox"),
-            displayContents = displayBox.value;
+        var displayBox = document.getElementById("displayBox");
+        var displayContents = displayBox.value;
         if (displayContents == "Syntax Error") {
             super.clearDisplay();
         }
-        if (displayContents == 0) {
-            displayBox.value = -;
-            this.operationString += -;
+        if (displayContents == "0") {
+            displayBox.value = "-";
+            this.operationString += "-";
         } else {
-            displayBox.value = - + displayBox.value;
-            this.operationString = - + this.operationString;
+            displayBox.value = "-" + displayBox.value;
+            this.operationString = "-" + this.operationString;
         }
     }
 
     clearMemory() {
+        super.subtractFromMemory(this.memoryRegister);
     }
 
 }
