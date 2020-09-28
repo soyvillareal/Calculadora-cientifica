@@ -114,6 +114,9 @@ class CalculadoraCientifica extends CalculadoraBasica {
     toggleSign() {
         var displayBox = document.getElementById("displayBox"),
             displayContents = displayBox.value;
+        if (displayContents == "Syntax Error") {
+            super.clearDisplay();
+        }
         if (displayContents == 0) {
             displayBox.value = -;
             this.operationString += -;
