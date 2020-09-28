@@ -105,27 +105,27 @@
             <tr>
                 <td>
                     <div class="displaytable-cell" id="bPercentage">
-                        <button class="button" type="button">e</button>
+                        <button class="button" type="button" onclick="calculadora.writeMathFunction('e')">e</button>
                     </div>
                 </td>
                 <td>
                     <div class="displaytable-cell" id="bClearDisplayCE">
-                        <button class="button redbutton" type="button">CE</button>
+                        <button class="button redbutton" type="button" onclick="calculadora.clearDisplay()">CE</button>
                     </div>
                 </td>
                 <td>
                     <div class="displaytable-cell" id="bClearDisplayC">
-                        <button class="button redbutton" type="button">C</button>
+                        <button class="button redbutton" type="button" onclick="calculadora.clearDisplay()">C</button>
                     </div>
                 </td>
                 <td>
                     <div class="displaytable-cell" id="bDelete">
-                        <button class="button redbutton" type="button">Del</button>
+                        <button class="button redbutton" type="button" onclick="calculadora.eraseLastInput()">Del</button>
                     </div>
                 </td>
                 <td>
                     <div class="displaytable-cell" id="bDivide">
-                        <button class="button greenbutton" type="button">/</button>
+                        <button class="button greenbutton" type="button" onclick="calculadora.writeOperatorToDisplay('/')">/</button>
                     </div>
                 </td>
             </tr>
