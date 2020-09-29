@@ -130,6 +130,17 @@ class CalculadoraCientifica extends CalculadoraBasica {
         super.subtractFromMemory(this.memoryRegister);
     }
 
+    readMemory() {
+        this.writeToDisplay(this.memoryRegister);
+    }
+
+    saveToMemory() {
+        this.memoryRegister = this.solveOperation();
+    }
+
+    eraseLastInput() {
+    }
+
 }
 
 const calculadora = new CalculadoraCientifica();
