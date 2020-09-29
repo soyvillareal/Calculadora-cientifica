@@ -131,6 +131,7 @@ class CalculadoraCientifica extends CalculadoraBasica {
     }
 
     readMemory() {
+        this.clearDisplay();
         this.writeToDisplay(this.memoryRegister);
     }
 
@@ -139,6 +140,11 @@ class CalculadoraCientifica extends CalculadoraBasica {
     }
 
     eraseLastInput() {
+        this.inputList.pop();
+        var recreatedOperation = "";
+        for (var each in this.inputList) {
+            recreatedOperation += this.inputList[each];
+        }
     }
 
 }
