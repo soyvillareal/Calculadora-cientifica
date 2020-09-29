@@ -145,6 +145,11 @@ class CalculadoraCientifica extends CalculadoraBasica {
         for (var each in this.inputList) {
             recreatedOperation += this.inputList[each];
         }
+        document.getElementById("displayBox").value = recreatedOperation;
+        for (var each in this.operationMap) {
+            recreatedOperation = recreatedOperation.replace(each, this.operationMap[each]);
+        }
+        this.operationString = recreatedOperation;
     }
 
 }
