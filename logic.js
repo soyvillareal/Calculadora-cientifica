@@ -186,13 +186,15 @@ class CalculadoraCientifica extends CalculadoraBasica {
         if (document.getElementById("displayBox").value == "Syntax Error") {
             super.clearDisplay();
         }
+        super.writeToDisplay(data);
     }
 
     calculateFactorial() {
-        var number = parseInt(this.operationString.split(new RegExp("[^0-9]"))),
-            result = 0;
-        try {
-        } catch(err) {
+        var number = parseInt(this.operationString.split(new RegExp("[^0-9]")));
+        var result = 0;
+        if(!err){
+            result = this.calculateRecursiveFactorial(number);
+        } else {
         }
     }
 
