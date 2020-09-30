@@ -187,14 +187,16 @@ class CalculadoraCientifica extends CalculadoraBasica {
             super.clearDisplay();
         }
         super.writeToDisplay(data);
+        this.operationString += this.operationMap[data];
+        this.inputList.push(data);
     }
 
     calculateFactorial() {
         var number = parseInt(this.operationString.split(new RegExp("[^0-9]")));
         var result = 0;
-        if(!err){
+        try {
             result = this.calculateRecursiveFactorial(number);
-        } else {
+        } catch(err) {
         }
     }
 
