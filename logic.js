@@ -174,16 +174,14 @@ class CalculadoraCientifica extends CalculadoraBasica {
     }
 
     calculateRecursiveFactorial(number) {
-        if (number == 1) {
-            if(number == 0){
-                return 1;   
-            }
+        if (number == 1 || number == 0) {
+            return 1;
         }
         return number * this.calculateRecursiveFactorial(number - 1);
     }
 
     nthTenPower() {
-        var number = this.operationString.split(new RegExp("[^0-9]"));
+        var number = parseInt(this.operationString.split(new RegExp("[^0-9]")));
         this.clearDisplay();
         document.getElementById("displayBox").value = Math.pow(10, parseInt(number));
     }
