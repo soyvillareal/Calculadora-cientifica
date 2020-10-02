@@ -217,13 +217,23 @@
                     </div>
                 </td>
                 <td>
-                    <div class="displaytable-cell">
+                    <div class="displaytable-cell" id="bCloseParentheses">
                         <button class="button greenbutton" type="button" onclick="calculadora.writeOperatorToDisplay(')')">)</button>
                     </div>
                 </td>
                 <td>
-                    <div class="displaytable-cell">
+                    <div class="displaytable-cell" id="bZero">
                         <button class="button bluebutton" type="button" onclick="calculadora.writeToDisplay('0')">0</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="displaytable-cell" id="bDot">
+                        <button class="button greenbutton" type="button" onclick="calculadora.writeToDisplay('.')">.</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="displaytable-cell" id="bEquals">
+                        <button class="button greenbutton" type="button" onclick="calculadora.solveOperation()">=</button>
                     </div>
                 </td>
             </tr>
