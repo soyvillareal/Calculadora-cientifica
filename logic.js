@@ -186,6 +186,16 @@ class CalculadoraCientifica extends CalculadoraBasica {
         document.getElementById("displayBox").value = Math.pow(10, parseInt(number));
     }
 
+    square() {
+        var reg = new RegExp("[^0-9]"),
+            number = this.operationString.split();
+        this.clearDisplay();
+        document.getElementById("displayBox").value = number;
+    }
+
+    cube() {
+    }
+
 }
 
 const calculadora = new CalculadoraCientifica();
