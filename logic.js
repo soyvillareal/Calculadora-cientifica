@@ -187,10 +187,9 @@ class CalculadoraCientifica extends CalculadoraBasica {
     }
 
     square() {
-        var reg = new RegExp("[^0-9]"),
-            number = this.operationString.split();
+        var number = this.operationString.split(new RegExp("[^0-9]"));
         this.clearDisplay();
-        document.getElementById("displayBox").value = number;
+        document.getElementById("displayBox").value = Math.pow(parseInt(number), 2);
     }
 
     cube() {
