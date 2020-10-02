@@ -187,7 +187,7 @@ class CalculadoraCientifica extends CalculadoraBasica {
     }
 
     square() {
-        var number = this.operationString.split(new RegExp("[^0-9]"));
+        var number = parseInt(this.operationString.split(new RegExp("[^0-9]")));
         this.clearDisplay();
         document.getElementById("displayBox").value = Math.pow(parseInt(number), 2);
     }
