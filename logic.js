@@ -224,12 +224,15 @@ class CalculadoraCientifica extends CalculadoraBasica {
 
     cube() {
         var reg = new RegExp("[^0-9]"),
-            number = this.operationString.split(reg);
+            number = parseInt(this.operationString.split(reg));
         this.clearDisplay();
         document.getElementById("displayBox").value = Math.pow(number);
     }
 
     inverseNumber() {
+        var reg = new RegExp("[^0-9]"),
+            number = this.operationString.split(reg);
+        this.clearDisplay();
     }
 
 }
