@@ -223,16 +223,15 @@ class CalculadoraCientifica extends CalculadoraBasica {
     }
 
     cube() {
-        var reg = new RegExp("[^0-9]"),
-            number = parseInt(this.operationString.split(reg));
+        var number = parseInt(this.operationString.split(new RegExp("[^0-9]")));
         this.clearDisplay();
-        document.getElementById("displayBox").value = Math.pow(number);
+        document.getElementById("displayBox").value = Math.pow(parseInt(number), 3);
     }
 
     inverseNumber() {
-        var reg = new RegExp("[^0-9]"),
-            number = this.operationString.split(reg);
+        var number = parseInt(this.operationString.split(new RegExp("[^0-9]")));
         this.clearDisplay();
+        document.getElementById("displayBox").value = Math.pow(parseInt(number), -1);
     }
 
 }
