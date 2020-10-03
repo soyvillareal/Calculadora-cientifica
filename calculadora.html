@@ -241,55 +241,56 @@
     </main>
 </body>
 <script type="text/javascript">
-    document.querySelector('#bMClear').addEventListener('click', function(){
+    var D = document;
+    D.querySelector('#bMClear').addEventListener('click', function(){
         calculadora.clearMemory()
-    }), document.querySelector('#bMRead').addEventListener('click', function(){
+    }), D.querySelector('#bMRead').addEventListener('click', function(){
         calculadora.readMemory()
-    }), document.querySelector('#bMAdd').addEventListener('click', function(){
+    }), D.querySelector('#bMAdd').addEventListener('click', function(){
         calculadora.addToMemory()
-    }), document.querySelector('#bMSub').addEventListener('click', function(){
+    }), D.querySelector('#bMSub').addEventListener('click', function(){
         calculadora.subtractFromMemory()
-    }), document.querySelector('#bMSave').addEventListener('click', function(){
+    }), D.querySelector('#bMSave').addEventListener('click', function(){
         calculadora.saveToMemory()
-    }), document.querySelector('#bSquare').addEventListener('click', function(){
+    }), D.querySelector('#bSquare').addEventListener('click', function(){
         calculadora.square()
-    }), document.querySelector('#bNthPowerOfTenOr').addEventListener('click', function(){
+    }), D.querySelector('#bNthPowerOfTenOr').addEventListener('click', function(){
         calculadora.nthTenPower()
-    }), document.querySelector('#bSine').addEventListener('click', function(){
+    }), D.querySelector('#bSine').addEventListener('click', function(){
         calculadora.writeMathFunction('sin(')
-    }), document.querySelector('#bCosine').addEventListener('click', function(){
+    }), D.querySelector('#bCosine').addEventListener('click', function(){
         calculadora.writeMathFunction('cos(')
-    }), document.querySelector('#bTangent').addEventListener('click', function(){
+    }), D.querySelector('#bTangent').addEventListener('click', function(){
         calculadora.writeMathFunction('tan(')
-    }), document.querySelector('#bCube').addEventListener('click', function(){
+    }), D.querySelector('#bCube').addEventListener('click', function(){
         calculadora.cube()
-    }), document.querySelector('#bInverseNumber').addEventListener('click', function(){
+    }), D.querySelector('#bInverseNumber').addEventListener('click', function(){
         calculadora.inverseNumber()
-    }), document.querySelector('#bSqrt').addEventListener('click', function(){
+    }), D.querySelector('#bSqrt').addEventListener('click', function(){
         calculadora.writeMathFunction('sqrt(')
-    }), document.querySelector('#bLogOr').addEventListener('click', function(){
+    }), D.querySelector('#bLogOr').addEventListener('click', function(){
         calculadora.writeMathFunction('log(')
-    }), document.querySelector('#bNaturalLog').addEventListener('click', function(){
+    }), D.querySelector('#bNaturalLog').addEventListener('click', function(){
         calculadora.writeMathFunction('ln(')
-    }), document.querySelector('#bPercentage').addEventListener('click', function(){
+    }), D.querySelector('#bPercentage').addEventListener('click', function(){
         calculadora.writeMathFunction('e')
-    }), document.querySelector('#bClearDisplayCE').addEventListener('click', function(){
+    }), D.querySelector('#bClearDisplayCE').addEventListener('click', function(){
         calculadora.clearDisplay()
-    }), document.querySelector('#bClearDisplayC').addEventListener('click', function(){
+    }), D.querySelector('#bClearDisplayC').addEventListener('click', function(){
         calculadora.clearDisplay()
-    }), document.querySelector('#bDelete').addEventListener('click', function(){
+    }), D.querySelector('#bDelete').addEventListener('click', function(){
         calculadora.eraseLastInput()
-    }), document.querySelector('#bDivide').addEventListener('click', function(){
+    }), D.querySelector('#bDivide').addEventListener('click', function(){
         calculadora.writeOperatorToDisplay('/')
-    }), document.querySelector('#bPi').addEventListener('click', function(){
+    }), D.querySelector('#bPi').addEventListener('click', function(){
         calculadora.writeMathFunction('PI')
-    }), document.querySelector('#bSeven').addEventListener('click', function(){
+    }), D.querySelector('#bSeven').addEventListener('click', function(){
         calculadora.writeToDisplay('7')
-    }), document.querySelector('#bEight').addEventListener('click', function(){
+    }), D.querySelector('#bEight').addEventListener('click', function(){
         calculadora.writeToDisplay('8')
-    }), document.querySelector('#bNine').addEventListener('click', function(){
+    }), D.querySelector('#bNine').addEventListener('click', function(){
         calculadora.writeToDisplay('9')
-    }), document.querySelector('#bMultiply').addEventListener('click', function(){
+    }), D.querySelector('#bMultiply').addEventListener('click', function(){
         calculadora.writeOperatorToDisplay('*')
     })
 
