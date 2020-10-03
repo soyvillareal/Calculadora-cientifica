@@ -24,54 +24,54 @@
             <tr>
                 <td>
                     <div class="displaytable-cell" id="bMClear">
-                        <button class="button greybutton" type="button" onclick="calculadora.clearMemory()">MC</button>
+                        <button class="button greybutton" type="button">MC</button>
                     </div>
                 </td>
                 <td>
                     <div class="displaytable-cell" id="bMRead">
-                        <button class="button greybutton" type="button" onclick="calculadora.readMemory()">MR</button>
+                        <button class="button greybutton" type="button">MR</button>
                     </div>
                 </td>
                 <td>
                     <div class="displaytable-cell" id="bMAdd">
-                        <button class="button greybutton" type="button" onclick="calculadora.addToMemory()">M+</button>
+                        <button class="button greybutton" type="button">M+</button>
                     </div>
                 </td>
                 <td>
                     <div class="displaytable-cell" id="bMSub">
-                        <button class="button greybutton" type="button" onclick="calculadora.subtractFromMemory()">M-</button>
+                        <button class="button greybutton" type="button">M-</button>
                     </div>
                 </td>
                 <td>
                     <div class="displaytable-cell" id="bMSave">
-                        <button class="button greybutton" type="button" onclick="calculadora.saveToMemory()">MS</button>
+                        <button class="button greybutton" type="button">MS</button>
                     </div>
                 </td>
             </tr>
             <tr>
                 <td>
                     <div class="displaytable-cell" id="bSquare">
-                        <button class="button blackbutton" type="button" onclick="calculadora.square()">x^2</button>
+                        <button class="button blackbutton" type="button">x^2</button>
                     </div>
                 </td>
                 <td>
                     <div class="displaytable-cell" id="bNthPowerOfTenOr">
-                        <button class="button blackbutton" type="button" onclick="calculadora.nthTenPower()">10^x</button>
+                        <button class="button blackbutton" type="button">10^x</button>
                     </div>
                 </td>
                 <td>
                     <div class="displaytable-cell" id="bSine">
-                        <button class="button blackbutton" type="button" onclick="calculadora.writeMathFunction('sin(')">sin</button>
+                        <button class="button blackbutton" type="button">sin</button>
                     </div>
                 </td>
                 <td>
                     <div class="displaytable-cell" id="bCosine">
-                        <button class="button blackbutton" type="button" onclick="calculadora.writeMathFunction('cos(')">cos</button>
+                        <button class="button blackbutton" type="button">cos</button>
                     </div>
                 </td>
                 <td>
                     <div class="displaytable-cell" id="bTangent">
-                        <button class="button blackbutton" type="button" onclick="calculadora.writeMathFunction('tan(')">tan</button>
+                        <button class="button blackbutton" type="button">tan</button>
                     </div>
                 </td>
             </tr>
@@ -240,5 +240,22 @@
         </table>
     </main>
 </body>
+<script type="text/javascript">
+    document.querySelector('#bMClear').addEventListener('click', function(){
+        clearMemory()
+    }), document.querySelector('#bMRead').addEventListener('click', function(){
+        readMemory()
+    }), document.querySelector('#bMAdd').addEventListener('click', function(){
+        addToMemory()
+    }), document.querySelector('#bMSub').addEventListener('click', function(){
+        subtractFromMemory()
+    }), document.querySelector('#bMSave').addEventListener('click', function(){
+        saveToMemory()
+    }), document.querySelector('#bSquare').addEventListener('click', function(){
+        square()
+    }), document.querySelector('#bNthPowerOfTenOr').addEventListener('click', function(){
+        nthTenPower()
+    })
 
+</script>
 </html>
