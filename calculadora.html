@@ -78,81 +78,81 @@
             <tr>
                 <td>
                     <div class="displaytable-cell" id="bCube">
-                        <button class="button blackbutton" type="button" onclick="calculadora.cube()">x^3</button>
+                        <button class="button blackbutton" type="button">x^3</button>
                     </div>
                 </td>
                 <td>
                     <div class="displaytable-cell" id="bInverseNumber">
-                        <button class="button blackbutton" type="button" onclick="calculadora.inverseNumber()">x^-1</button>
+                        <button class="button blackbutton" type="button">x^-1</button>
                     </div>
                 </td>
                 <td>
                     <div class="displaytable-cell" id="bSqrt">
-                        <button class="button blackbutton" type="button" onclick="calculadora.writeMathFunction('sqrt(')">sqrt</button>
+                        <button class="button blackbutton" type="button">sqrt</button>
                     </div>
                 </td>
                 <td>
                     <div class="displaytable-cell" id="bLogOr">
-                        <button class="button blackbutton" type="button" onclick="calculadora.writeMathFunction('log(')">log</button>
+                        <button class="button blackbutton" type="button">log</button>
                     </div>
                 </td>
                 <td>
                     <div class="displaytable-cell" id="bNaturalLog">
-                        <button class="button blackbutton" type="button" onclick="calculadora.writeMathFunction('ln(')">ln</button>
+                        <button class="button blackbutton" type="button">ln</button>
                     </div>
                 </td>
             </tr>
             <tr>
                 <td>
                     <div class="displaytable-cell" id="bPercentage">
-                        <button class="button" type="button" onclick="calculadora.writeMathFunction('e')">e</button>
+                        <button class="button" type="button">e</button>
                     </div>
                 </td>
                 <td>
                     <div class="displaytable-cell" id="bClearDisplayCE">
-                        <button class="button redbutton" type="button" onclick="calculadora.clearDisplay()">CE</button>
+                        <button class="button redbutton" type="button">CE</button>
                     </div>
                 </td>
                 <td>
                     <div class="displaytable-cell" id="bClearDisplayC">
-                        <button class="button redbutton" type="button" onclick="calculadora.clearDisplay()">C</button>
+                        <button class="button redbutton" type="button">C</button>
                     </div>
                 </td>
                 <td>
                     <div class="displaytable-cell" id="bDelete">
-                        <button class="button redbutton" type="button" onclick="calculadora.eraseLastInput()">Del</button>
+                        <button class="button redbutton" type="button">Del</button>
                     </div>
                 </td>
                 <td>
                     <div class="displaytable-cell" id="bDivide">
-                        <button class="button greenbutton" type="button" onclick="calculadora.writeOperatorToDisplay('/')">/</button>
+                        <button class="button greenbutton" type="button">/</button>
                     </div>
                 </td>
             </tr>
             <tr>
                 <td>
                     <div class="displaytable-cell" id="bPi">
-                        <button class="button" type="button" onclick="calculadora.writeMathFunction('PI')">π</button>
+                        <button class="button" type="button">π</button>
                     </div>
                 </td>
                 <td>
                     <div class="displaytable-cell" id="bSeven">
-                        <button class="button bluebutton" type="button" onclick="calculadora.writeToDisplay('7')">7</button>
+                        <button class="button bluebutton" type="button">7</button>
                     </div>
                 </td>
                 <td>
                     <div class="displaytable-cell" id="bEight">
-                        <button class="button bluebutton" type="button" onclick="calculadora.writeToDisplay('8')">8</button>
+                        <button class="button bluebutton" type="button">8</button>
                     </div>
                 </td>
                 <td>
                     <div class="displaytable-cell" id="bNine">
-                        <button class="button bluebutton" type="button" onclick="calculadora.writeToDisplay('9')">9</button>
+                        <button class="button bluebutton" type="button">9</button>
                     </div>
                 </td>
                 <td>
                     <div class="displaytable-cell" id="bMultiply">
-                        <button class="button greenbutton" type="button" onclick="calculadora.writeOperatorToDisplay('*')">x</button>
+                        <button class="button greenbutton" type="button">x</button>
                     </div>
                 </td>
             </tr>
@@ -242,25 +242,47 @@
 </body>
 <script type="text/javascript">
     document.querySelector('#bMClear').addEventListener('click', function(){
-        clearMemory()
+        calculadora.clearMemory()
     }), document.querySelector('#bMRead').addEventListener('click', function(){
-        readMemory()
+        calculadora.readMemory()
     }), document.querySelector('#bMAdd').addEventListener('click', function(){
-        addToMemory()
+        calculadora.addToMemory()
     }), document.querySelector('#bMSub').addEventListener('click', function(){
-        subtractFromMemory()
+        calculadora.subtractFromMemory()
     }), document.querySelector('#bMSave').addEventListener('click', function(){
-        saveToMemory()
+        calculadora.saveToMemory()
     }), document.querySelector('#bSquare').addEventListener('click', function(){
-        square()
+        calculadora.square()
     }), document.querySelector('#bNthPowerOfTenOr').addEventListener('click', function(){
-        nthTenPower()
+        calculadora.nthTenPower()
     }), document.querySelector('#bSine').addEventListener('click', function(){
-        writeMathFunction('sin(')
+        calculadora.writeMathFunction('sin(')
     }), document.querySelector('#bCosine').addEventListener('click', function(){
-        writeMathFunction('cos(')
+        calculadora.writeMathFunction('cos(')
     }), document.querySelector('#bTangent').addEventListener('click', function(){
-        writeMathFunction('tan(')
+        calculadora.writeMathFunction('tan(')
+    }), document.querySelector('#bCube').addEventListener('click', function(){
+        calculadora.cube()
+    }), document.querySelector('#bInverseNumber').addEventListener('click', function(){
+        calculadora.inverseNumber()
+    }), document.querySelector('#bSqrt').addEventListener('click', function(){
+        calculadora.writeMathFunction('sqrt(')
+    }), document.querySelector('#bLogOr').addEventListener('click', function(){
+        calculadora.writeMathFunction('log(')
+    }), document.querySelector('#bNaturalLog').addEventListener('click', function(){
+        calculadora.writeMathFunction('ln(')
+    }), document.querySelector('#bPercentage').addEventListener('click', function(){
+        calculadora.writeMathFunction('e')
+    }), document.querySelector('#bClearDisplayCE').addEventListener('click', function(){
+        calculadora.clearDisplay()
+    }), document.querySelector('#bClearDisplayC').addEventListener('click', function(){
+        calculadora.clearDisplay()
+    }), document.querySelector('#bDelete').addEventListener('click', function(){
+        calculadora.eraseLastInput()
+    }), document.querySelector('#bDivide').addEventListener('click', function(){
+        calculadora.writeOperatorToDisplay('/')
+    }), document.querySelector('#bPi').addEventListener('click', function(){
+        calculadora
     })
 
 </script>
