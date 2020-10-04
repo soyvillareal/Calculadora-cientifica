@@ -24,135 +24,135 @@
             <tr>
                 <td>
                     <div class="displaytable-cell" id="bMClear">
-                        <button class="button greybutton" type="button">MC</button>
+                        <button class="button greybutton" type="button" onclick="calculadora.clearMemory()">MC</button>
                     </div>
                 </td>
                 <td>
                     <div class="displaytable-cell" id="bMRead">
-                        <button class="button greybutton" type="button">MR</button>
+                        <button class="button greybutton" type="button" onclick="calculadora.readMemory()">MR</button>
                     </div>
                 </td>
                 <td>
                     <div class="displaytable-cell" id="bMAdd">
-                        <button class="button greybutton" type="button">M+</button>
+                        <button class="button greybutton" type="button" onclick="calculadora.addToMemory()">M+</button>
                     </div>
                 </td>
                 <td>
                     <div class="displaytable-cell" id="bMSub">
-                        <button class="button greybutton" type="button">M-</button>
+                        <button class="button greybutton" type="button" onclick="calculadora.subtractFromMemory()">M-</button>
                     </div>
                 </td>
                 <td>
                     <div class="displaytable-cell" id="bMSave">
-                        <button class="button greybutton" type="button">MS</button>
+                        <button class="button greybutton" type="button" onclick="calculadora.saveToMemory()">MS</button>
                     </div>
                 </td>
             </tr>
             <tr>
                 <td>
                     <div class="displaytable-cell" id="bSquare">
-                        <button class="button blackbutton" type="button">x^2</button>
+                        <button class="button blackbutton" type="button" onclick="calculadora.square()">x^2</button>
                     </div>
                 </td>
                 <td>
                     <div class="displaytable-cell" id="bNthPowerOfTenOr">
-                        <button class="button blackbutton" type="button">10^x</button>
+                        <button class="button blackbutton" type="button" onclick="calculadora.nthTenPower()">10^x</button>
                     </div>
                 </td>
                 <td>
                     <div class="displaytable-cell" id="bSine">
-                        <button class="button blackbutton" type="button">sin</button>
+                        <button class="button blackbutton" type="button" onclick="calculadora.writeMathFunction('sin(')">sin</button>
                     </div>
                 </td>
                 <td>
                     <div class="displaytable-cell" id="bCosine">
-                        <button class="button blackbutton" type="button">cos</button>
+                        <button class="button blackbutton" type="button" onclick="calculadora.writeMathFunction('cos(')">cos</button>
                     </div>
                 </td>
                 <td>
                     <div class="displaytable-cell" id="bTangent">
-                        <button class="button blackbutton" type="button">tan</button>
+                        <button class="button blackbutton" type="button" onclick="calculadora.writeMathFunction('tan(')">tan</button>
                     </div>
                 </td>
             </tr>
             <tr>
                 <td>
                     <div class="displaytable-cell" id="bCube">
-                        <button class="button blackbutton" type="button">x^3</button>
+                        <button class="button blackbutton" type="button" onclick="calculadora.cube()">x^3</button>
                     </div>
                 </td>
                 <td>
                     <div class="displaytable-cell" id="bInverseNumber">
-                        <button class="button blackbutton" type="button">x^-1</button>
+                        <button class="button blackbutton" type="button" onclick="calculadora.inverseNumber()">x^-1</button>
                     </div>
                 </td>
                 <td>
                     <div class="displaytable-cell" id="bSqrt">
-                        <button class="button blackbutton" type="button">sqrt</button>
+                        <button class="button blackbutton" type="button" onclick="calculadora.writeMathFunction('sqrt(')">sqrt</button>
                     </div>
                 </td>
                 <td>
                     <div class="displaytable-cell" id="bLogOr">
-                        <button class="button blackbutton" type="button">log</button>
+                        <button class="button blackbutton" type="button" onclick="calculadora.writeMathFunction('log(')">log</button>
                     </div>
                 </td>
                 <td>
                     <div class="displaytable-cell" id="bNaturalLog">
-                        <button class="button blackbutton" type="button">ln</button>
+                        <button class="button blackbutton" type="button" onclick="calculadora.writeMathFunction('ln(')">ln</button>
                     </div>
                 </td>
             </tr>
             <tr>
                 <td>
                     <div class="displaytable-cell" id="bPercentage">
-                        <button class="button" type="button">e</button>
+                        <button class="button" type="button" onclick="calculadora.writeMathFunction('e')">e</button>
                     </div>
                 </td>
                 <td>
                     <div class="displaytable-cell" id="bClearDisplayCE">
-                        <button class="button redbutton" type="button">CE</button>
+                        <button class="button redbutton" type="button" onclick="calculadora.clearDisplay()">CE</button>
                     </div>
                 </td>
                 <td>
                     <div class="displaytable-cell" id="bClearDisplayC">
-                        <button class="button redbutton" type="button">C</button>
+                        <button class="button redbutton" type="button" onclick="calculadora.clearDisplay()">C</button>
                     </div>
                 </td>
                 <td>
                     <div class="displaytable-cell" id="bDelete">
-                        <button class="button redbutton" type="button">Del</button>
+                        <button class="button redbutton" type="button" onclick="calculadora.eraseLastInput()">Del</button>
                     </div>
                 </td>
                 <td>
                     <div class="displaytable-cell" id="bDivide">
-                        <button class="button greenbutton" type="button">/</button>
+                        <button class="button greenbutton" type="button" onclick="calculadora.writeOperatorToDisplay('/')">/</button>
                     </div>
                 </td>
             </tr>
             <tr>
                 <td>
                     <div class="displaytable-cell" id="bPi">
-                        <button class="button" type="button">π</button>
+                        <button class="button" type="button" onclick="calculadora.writeMathFunction('PI')">π</button>
                     </div>
                 </td>
                 <td>
                     <div class="displaytable-cell" id="bSeven">
-                        <button class="button bluebutton" type="button">7</button>
+                        <button class="button bluebutton" type="button" onclick="calculadora.writeToDisplay('7')">7</button>
                     </div>
                 </td>
                 <td>
                     <div class="displaytable-cell" id="bEight">
-                        <button class="button bluebutton" type="button">8</button>
+                        <button class="button bluebutton" type="button" onclick="calculadora.writeToDisplay('8')">8</button>
                     </div>
                 </td>
                 <td>
                     <div class="displaytable-cell" id="bNine">
-                        <button class="button bluebutton" type="button">9</button>
+                        <button class="button bluebutton" type="button" onclick="calculadora.writeToDisplay('9')">9</button>
                     </div>
                 </td>
                 <td>
                     <div class="displaytable-cell" id="bMultiply">
-                        <button class="button greenbutton" type="button">x</button>
+                        <button class="button greenbutton" type="button" onclick="calculadora.writeOperatorToDisplay('*')">x</button>
                     </div>
                 </td>
             </tr>
@@ -240,59 +240,5 @@
         </table>
     </main>
 </body>
-<script type="text/javascript">
-    var D = document;
-    D.querySelector('#bMClear').addEventListener('click', function(){
-        calculadora.clearMemory()
-    }), D.querySelector('#bMRead').addEventListener('click', function(){
-        calculadora.readMemory()
-    }), D.querySelector('#bMAdd').addEventListener('click', function(){
-        calculadora.addToMemory()
-    }), D.querySelector('#bMSub').addEventListener('click', function(){
-        calculadora.subtractFromMemory()
-    }), D.querySelector('#bMSave').addEventListener('click', function(){
-        calculadora.saveToMemory()
-    }), D.querySelector('#bSquare').addEventListener('click', function(){
-        calculadora.square()
-    }), D.querySelector('#bNthPowerOfTenOr').addEventListener('click', function(){
-        calculadora.nthTenPower()
-    }), D.querySelector('#bSine').addEventListener('click', function(){
-        calculadora.writeMathFunction('sin(')
-    }), D.querySelector('#bCosine').addEventListener('click', function(){
-        calculadora.writeMathFunction('cos(')
-    }), D.querySelector('#bTangent').addEventListener('click', function(){
-        calculadora.writeMathFunction('tan(')
-    }), D.querySelector('#bCube').addEventListener('click', function(){
-        calculadora.cube()
-    }), D.querySelector('#bInverseNumber').addEventListener('click', function(){
-        calculadora.inverseNumber()
-    }), D.querySelector('#bSqrt').addEventListener('click', function(){
-        calculadora.writeMathFunction('sqrt(')
-    }), D.querySelector('#bLogOr').addEventListener('click', function(){
-        calculadora.writeMathFunction('log(')
-    }), D.querySelector('#bNaturalLog').addEventListener('click', function(){
-        calculadora.writeMathFunction('ln(')
-    }), D.querySelector('#bPercentage').addEventListener('click', function(){
-        calculadora.writeMathFunction('e')
-    }), D.querySelector('#bClearDisplayCE').addEventListener('click', function(){
-        calculadora.clearDisplay()
-    }), D.querySelector('#bClearDisplayC').addEventListener('click', function(){
-        calculadora.clearDisplay()
-    }), D.querySelector('#bDelete').addEventListener('click', function(){
-        calculadora.eraseLastInput()
-    }), D.querySelector('#bDivide').addEventListener('click', function(){
-        calculadora.writeOperatorToDisplay('/')
-    }), D.querySelector('#bPi').addEventListener('click', function(){
-        calculadora.writeMathFunction('PI')
-    }), D.querySelector('#bSeven').addEventListener('click', function(){
-        calculadora.writeToDisplay('7')
-    }), D.querySelector('#bEight').addEventListener('click', function(){
-        calculadora.writeToDisplay('8')
-    }), D.querySelector('#bNine').addEventListener('click', function(){
-        calculadora.writeToDisplay('9')
-    }), D.querySelector('#bMultiply').addEventListener('click', function(){
-        calculadora.writeOperatorToDisplay('*')
-    })
 
-</script>
 </html>
