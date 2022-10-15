@@ -4,7 +4,7 @@ Calculadora cientifica desarrollada en HTML,  CSS y JAVASCRIPT
 _En el siguiente glosario se encuentran las funciones que se utilizaran para darle funcionalidad 
 a ciertos botones, al lado de cada funcion se encuentra su correspondiente signo o texto._
 
-## Nombre de las funciones funciones:
+## Nombre de las funciones:
 * clearMemory(); // MC
 * readMemory(); // MR
 * addToMemory(); // M+
